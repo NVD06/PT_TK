@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Giaodien.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="all">
+        <header class="header">
+            <div id="title">
+                <div>
+                    <a href=""><img style="height: 50px;" src="../image/logo.png" alt=""></a>
+                </div>
+                <div class="header-right">
+                    <div class="dropdown">
+                        <button class="dropbtn">GIÁO DỤC</button>
+                        <div class="dropdown-content">
+                                <a href="#">Sơ cấp</a>
+                                <a href="#">Trung cấp</a>
+                                <a href="#">Phổ thông</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn" style="margin-right: 10px;">DOANH NGHIỆP</button>
+                        <div class="dropdown-content">
+                            <a href="#">Đọc</a>
+                            <a href="#">Giao tiếp</a>
+                            <a href="#">Viết</a>
+                            <a href="#">Nghe</a>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <button id="sign_in" onclick="opensignForm()">Sign in</button>
+  
+                        <div id="signForm" class="window-1">
+                            <div class="window-con">
+                                    <span class="close" onclick="closesignForm()">&times;</span>
+                                    <div style="display: flex; justify-content: space-between; margin-top: 30px; ">
+                                        <div style="width: 50%; ">
+                                            <div style="padding-left: 30px;">
+                                                <img style="width: 90%;border-radius: 20px;" src="../image/logo.png" alt="">
+                                                <p>Chào mừng bạn gia nhập ngôi nhà của những người ham học tiếng anh</p>
+                                            </div>
+                                        </div>
+                                        <div style="margin-top: 20px;">
+                                            <div style="width: 60%; padding-left: 50px;">
+                                                <label for="Name">Name:</label>
+                                                <input type="text" id="name" placeholder="Enter Name" pattern="[a-z]{1,15}">
+                                            </div>
+                                
+                                            <div style="width: 60%; padding-left: 50px;">
+                                                <label  for="email">Email:</label>
+                                                <input type="text" id="email" placeholder="Enter email">
+                                            </div>
+                                        
+                                            <div style="width: 60%; padding-left: 50px;">
+                                                <label  for="password">Password:</label>
+                                                <input type="password" name="" id="password" placeholder="Enter password">
+                                            </div>
+                                
+                                            <div style="width: 60%; padding-left: 50px;">
+                                                <label  for="cf password">Confirm Password:</label>
+                                                <input type="cf password" name="" id="cf password" placeholder="Enter password">
+                                            </div>
+                                
+                                            <div style="width: 60%; padding-left: 50px;padding-top: 30px;">
+                                                <input type="radio" id="agree-terms" name="agree-terms" required>
+                                                <label for="agree-terms">I agree to the terms and conditions</label>
+                                            </div>
+                        
+                                            <div class="box" style="padding-top: 10px;">
+                                                <a href=""><button>Sign in</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                      
+                        <script >
+                            function opensignForm() {
+                                var signForm = document.getElementById("signForm");
+                                signForm.style.display = "block";
+                            }
+                      
+                            function closesignForm() {
+                                var signForm = document.getElementById("signForm");
+                                signForm.style.display = "none";
+                            }
+                        </script>
+
+
+                        
+                        <button id="log_in" onclick="openLoginForm()">Log in</button>
+  
+                        <div id="loginForm" class="window">
+                          <div class="window-content">
+                              <span class="close" onclick="closeLoginForm()">&times;</span>
+                              <h2>Login</h2>
+                              <div >
+                                  <label style="padding-right: 30px;" for="email">Email</label>
+                                  <input type="text" id="email" placeholder="Enter email">
+                              </div>
+                          
+                              <div>
+                                  <label style="padding-right: 7px;" for="password">Password</label>
+                                  <input type="password" name="" id="password" placeholder="Enter password">
+                              </div>
+                      
+                              <div style="margin-top: 10px;">
+                                  <input type="radio" name="" id="remember">
+                                  <label for="remember">remember</label>
+                              </div>
+                      
+                              <div class="box">
+                                  <a href="../trangchu/trangchu.html"><button>Log in</button></a>
+                              </div>
+                              
+                              <div style="text-align: center;padding-top: 4px;">
+                                  <a href="../trangchu/trangchu.html">Forgot</a>
+                              </div>
+                          </div>
+                        </div>
+                      
+                        <script >
+                            function openLoginForm() {
+                                var loginForm = document.getElementById("loginForm");
+                                loginForm.style.display = "block";
+                            }
+                      
+                            function closeLoginForm() {
+                                var loginForm = document.getElementById("loginForm");
+                                loginForm.style.display = "none";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <section class="first">
+            <div class="first-left">
+                <div >
+                    <h2>Chào mừng bạn đến với ngôi nhà của chúng tôi</h2>
+                    <p style="font-size: 20px;">Tham gia cùng hơn 4 học sinh đang sử dụng tài nguyên của trang này để học tiếng anh, giúp các bạn cải thiện điểm số
+                        .Bên cạnh đó, chúng tôi luôn lắng nghe tiếp thu ý kiến phản hổi khách hàng nhằm cải thiện chương trình học qua từng ngày 
+                    </p>
+                </div>
+                <div class="dkmp">
+                    <button onclick="opensignForm()"><p>Đăng ký miễn phí</p></button>
+                </div>
+            </div>
+        </section>
+        <div style="margin: 0 auto;width: 70%;">
+            <section style="margin-top: 90px;">
+                <p style="text-align: center; font-size: 37px;"><span style="color: aqua;">100%</span> học sinh sử dụng HTDP cho biết họ đã <span style="color: aqua;">cải thiện</span> được <span style="color: aqua;">điểm số</span></p>
+            </section>
+            <section class="section-2">
+                <div style="width: 47%;">
+                    <p style="font-size: 37px;"><b>Giao diện khóa học thân thiên</b></p>
+                    <p style="margin-top: 15px;">Theo nghiên cứu, việc bạn có trải nghiệm tốt sẽ giúp bạn tăng khả năng nhớ lâu hơn.chính vì thế chúng tôi đã cố gắng để các học sinh hài lòng từ đó cải thiện kết quả học tập các em</p>
+                    <div style="width: 150px; margin-top: 90px;">
+                        <button style="background-color: aqua;border-radius: 5px;border: none;" onclick="opensignForm()"><p>Cùng trải nghiệm nào</p></button>
+                    </div>
+                </div>
+                <div style="width: 47%; ">
+                    <img style="width: 100%;height: 100%;border-radius: 10px;" src="../image/tes.jpg" alt="">
+                </div>
+            </section>
+
+            <section class="section-3">
+                <div style="width: 47%;">
+                    <img style="width: 100%; border-radius: 25px;" src="../image/dienthoai.png" alt="">
+                </div>
+                <div style="width: 47%; padding-top: 50px;">
+                    <p style="font-size: 37px;"><b>Thời gian đi lại hôm qua, hôm nay lại là buổi học</b></p>
+                    <p style="margin-top: 30px;">Học ở mọi nơi – ngay cả khi ngoại tuyến – với ứng dụng iOS và Android của chúng tôi. Tiến trình của bạn được đồng bộ hóa giữa điện thoại và máy tính.</p>
+                    <div style="margin-top: 100px;">
+                        <a href="https://www.apple.com/vn/app-store/"><img style="width: 140px;" src="../image/ios.png" alt=""></a>
+                        <a href="https://play.google.com/store/games?hl=vi&gl=US"><img style="width: 140px;" src="../image/ggpl.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-4">
+                <p style="font-size: 30px;"><b>Các học sinh nói gì về HTDQ</b></p>
+                <div style="display: flex; justify-content: space-between;">
+                    <div class="anh">
+                        <img src="../image/quan.jpg" alt="" class="ima">
+                        <p>Web dễ học</p>
+                    </div>
+                    <div class="anh">
+                        <img src="../image/trung.png" alt="" class="ima">
+                        <p>Chúng ta cùng cố gắng để tốt hơn</p>
+                    </div>
+                    <div class="anh">
+                        <img src="../image/duc.jpg" alt="" class="ima">
+                        <p>Cảm ơn các thầy cô trên web đã dạy em </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="last">
+            <div id="last">
+                <p style="font-size: 30px;"><span style="color: rgb(25, 248, 5);">HTDQ</span>-Web học tiếng anh chất lượng cao</p>
+                <p style="padding-bottom: 20px;">Hãy bắt đầu tham gia và cải thiện bản thân</p>
+                <button onclick="opensignForm()" style="background-color: rgb(220, 147, 115);border: none;padding: 10px 16px;border-radius: 8px;">Start</button>
+            </div>
+        </div>
+            <footer class="footer">
+                <div style="width: 40%;">
+                    <a href=""><img style="height: 50px;" src="../image/logo.png" alt=""></a>
+                    <a href=""><p style="color: black;">HTDQ là một trang web giúp học sinh học tiếng anh tốt hơn, cải thiện từng ngày</p></a>
+                    <div>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+                </div>
+                <div>
+                    <p>GIỚI THIỆU</p>
+                    <ul>
+                        <li>Giới thiệu NTDQ</li>
+                        <li>Tuyển dụng</li>
+                        <li>Tải ứng dụng</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>HỌC SINH</p>
+                    <ul>
+                        <li>Kiểm tra</li>
+                        <li>Học</li>
+                        <li>Lời Giải</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>GIÁO VIÊN</p>
+                    <ul>
+                        <li>LIVE</li>
+                        <li>BLOG</li>
+                        <li>Kiểm tra trình độ</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>HELP</p>
+                    <ul>
+                        <li>HELP</li>
+                        <li>Thảo luận</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+                <div></div>
+            </footer>
+       
+    </div>
+    
+</body>
+</html>

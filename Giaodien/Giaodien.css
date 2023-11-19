@@ -1,0 +1,118 @@
+@import url(header.css);
+@import url(dangnhap.css);
+@import url(dangky.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.all{
+
+}
+
+.first{
+    background: url(../image/aaa.png);
+    min-height: 800px;
+    width: 100%;
+}
+
+.first-left{
+    color: white;
+    width: 760px;
+    padding: 300px 0 0 300px;
+}
+.first-left h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.dkmp button{
+    margin-top: 30px;
+    background-color: rgb(6, 62, 152);
+    width: 200px;
+    border-radius: 10px;
+}
+.dkmp p{
+    text-align: center;
+    padding: 16px;
+    color: white;
+}
+.section-2{
+    margin-top: 150px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section-2 div p{
+    font-size: 20px;
+}
+
+.section-3{
+    margin-top: 150px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section-3 div p{
+    font-size: 20px;
+}
+
+
+.section-4{
+    margin-top: 150px;
+}
+.section-4 p{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.section-4 img{
+    height: 300px;
+}
+.anh{
+    width: 50%;
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px;
+}
+  
+.ima{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+  
+
+.last{
+    background: url(../image/background-xanh-duong-18.jpg);
+    min-height: 200px;
+    margin-top: 100px;
+}
+#last{
+    text-align: center;
+}
+#last p{
+    padding-top: 20px;
+}
+
+.footer{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 70%;
+}
+.footer p{
+    margin-bottom: 10px;
+}
+
+
+
